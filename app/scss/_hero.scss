@@ -1,0 +1,53 @@
+.hero {
+  height: 100vh;
+  background-image: url(../images/hero-bg.webp);
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+  z-index: 1;
+  color: $colorWhite;
+
+  &__overlay {
+    background-color: rgba($colorBlack, .85);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__main {
+    display: flex;
+    gap: 6.4rem;
+    justify-content: space-between;
+
+    &-content {
+      padding-block-start: 12rem;
+    }
+  }
+
+  &__title {
+    font-size: 7.2rem;
+    line-height: 8rem;
+    font-family: "PT Serif", serif;
+    position: relative;
+    margin-block-end: 2.7rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../images/hero-shape.svg);
+      width: 17.6rem;
+      height: 17.6rem;
+      right: 13.5rem;
+      top: -5rem;
+    }
+  }
+  
+  &__hours {
+    font-size: 2.4rem;
+    line-height: 1.33;
+    margin-block-end: 4rem;
+  }
+}

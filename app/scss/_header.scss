@@ -1,0 +1,10 @@
+.header {
+  margin-block-end: 9rem;
+
+  &__wrapper {
+    padding-block: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
