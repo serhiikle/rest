@@ -168,4 +168,14 @@
       }
     }
   }
+
+  .button.btn-fill:hover {
+    border-color: rgba($colorWhite, .3);
+    background-color: rgba($colorPurple, .7);
+  }
+
+  .button.btn-transparent:hover {
+    border-color: transparent;
+    background-color: $colorPurple;
+  }
 }

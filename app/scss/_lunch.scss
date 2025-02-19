@@ -1,0 +1,23 @@
+.lunch {
+  padding: 12rem 0 9.6rem;
+
+  &__rest-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem 3.8rem;
+    margin-block-end: 4.6rem;
+  }
+
+  &__rest-item {
+    flex-basis: calc(50% - 3.8rem);
+    margin-block-end: 2.4rem;
+  }
+
+  &__subtitle {
+    margin-block-end: 0.3rem;
+  }
+
+  &__title {
+    margin-block-end: 4.7rem;
+  }
+}

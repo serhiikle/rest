@@ -25,6 +25,11 @@
     &-content {
       padding-block-start: 12rem;
     }
+
+    &-btns {
+      display: flex;
+      gap: 3rem;
+    }
   }
 
   &__title {

@@ -80,24 +80,15 @@
   justify-self: center;
   border-radius: .3rem;
   transition: all .2s ease-in;
+  display: inline-block;
 
   &.btn-fill {
     background-color: $colorPurple;
-    margin-inline-end: 3rem;
+    color: $colorWhite;
   }
 
   &.btn-transparent {
     border-color: rgba($colorWhite, .3);
-  }
-
-  &.btn-fill:hover {
-    border-color: rgba($colorWhite, .3);
-    background-color: transparent;
-  }
-
-  &.btn-transparent:hover {
-    border-color: transparent;
-    background-color: $colorPurple;
   }
 }
 
@@ -123,6 +114,53 @@
     animation-duration: .8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+  }
+}
+
+//================ TYPOGRAPHY =====================
+
+.subtitle {
+  font-size: 2.4rem;
+  line-height: 1.33;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+
+//================ RESTAURANT-MENU =====================
+
+.restaurant-menu {
+  &__content {
+    flex-basis: 100%;
+  }
+
+  &__item {
+    padding-block-end: 1.7rem;
+    border-block-end: 1px solid $colorLightGrey;
+
+    &-descr {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.71;
+      color: rgba($colorBgDark, .5);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__price {
+    color: rgba($colorBgDark, .5);
+    // align-self: flex-start;
   }
 }
 
