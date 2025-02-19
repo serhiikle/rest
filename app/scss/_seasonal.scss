@@ -6,6 +6,13 @@
   padding-block: 16rem;
   box-shadow: 0 2rem 4rem 0 rgba($colorBlack, 0.05);
 
+  &__image {
+    img {
+      border-radius: .5rem;
+      overflow: hidden;
+    }
+  }
+
   &__wrapper {
     display: flex;
     gap: 6.2rem;
