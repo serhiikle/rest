@@ -178,4 +178,15 @@
     border-color: transparent;
     background-color: $colorPurple;
   }
+
+  .slider__arrows-right:hover,
+  .slider__arrows-left:hover {
+    border-color: $colorPurple;
+
+    svg {
+      path {
+        fill: $colorPurple;
+      }
+    }
+  }
 }

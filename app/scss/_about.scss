@@ -1,0 +1,58 @@
+  .about {
+    &__subtitle {
+      margin-block-end: 0.3rem;
+    }
+
+    &__title {
+      margin-block-end: 6.8rem;
+    }
+
+    &__slider {
+      &-wrapper {
+        position: relative;
+      }
+      
+      &-item {
+        background-color: $colorWhite;
+        padding: 6.5rem 10rem 7.1rem;
+        border-radius: .5rem;
+      }
+
+      &-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4.1rem;
+
+        img {
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+
+      &-text {
+        max-inline-size: 77rem;
+        margin: 0 auto 3rem;
+      }
+
+      &-stars {
+        display: flex;
+        justify-content: center;
+        gap: 0.7rem;
+        margin-block-end: 1.9rem;
+      }
+
+      &-name {
+        text-align: center;
+        font-family: "PT Serif", serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.33;
+        margin-block-end: 0.2rem;
+      }
+
+      &-descr {
+        color: rgba($colorBgDark, .3);
+        text-align: center;
+      }
+    }
+  }
