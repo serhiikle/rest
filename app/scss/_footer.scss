@@ -1,6 +1,33 @@
 .footer {
+  margin-block-start: -16rem;
+  position: relative;
+  z-index: -1;
+  background-color: $colorBgDark;
 
   &__wrapper {
-    padding-block: 40px;
+    padding: 24.9rem 0 10.3rem;
+    text-align: center;
   }
+
+  &__logo {
+    color: $colorWhite;
+    margin-block-end: 3.2rem;
+  }
+  
+  &__nav {
+    color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    margin-block-end: 8.7rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 2.5rem;
+  }
+}
+
+.copyright {
+  color: rgba($colorWhite, .5);
 }
