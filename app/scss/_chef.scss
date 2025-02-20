@@ -1,0 +1,44 @@
+.chef {
+  padding-block: 16rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__side-image {
+    &::before {
+      background-image: url(../images/cooker-hat.svg);
+    }
+  }
+
+  &__subtitle {
+    margin-block-end: 0.3rem;
+  }
+
+  &__title {
+    margin-block-end: 1.4rem;
+  }
+
+  &__text {
+    margin-block-end: 4.8rem;
+  }
+
+  &__name {
+    font-family: "PT Serif";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.3333;
+    margin-block-end: 0.2rem;
+  }
+
+  &__descr {
+    color: rgba($colorBgDark, .5);
+  }
+}

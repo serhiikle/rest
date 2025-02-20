@@ -201,6 +201,42 @@
   }
 }
 
+//================ SIDE IMAGE =====================
+
+.side-image {
+  position: absolute;
+    inline-size: 17rem;
+    block-size: 17rem;
+    border-radius: .3rem;
+    background: $colorBiez;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5.4rem;
+    left: -4.8rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inline-size: 11.2rem;
+      block-size: 11.2rem;
+      border-radius: 50%;
+      border: 1px solid $colorWhite;
+      // background-image: url(../images/dishes.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+  &-wrapper {
+    position: relative;
+
+    img {
+      border-radius: .3rem;
+      overflow: hidden;
+    }
+  }
+}
+
 //================ FORM =====================
 
 .form {
