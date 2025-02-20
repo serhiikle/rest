@@ -1,0 +1,109 @@
+.reserve {
+  padding-block: 16rem;
+  background-color: $colorWhite;
+  inline-size: 98%;
+  margin-inline-start: auto;
+  border-radius: .5rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 6.2rem;
+  }
+
+  &__image {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      inline-size: 17.6rem;
+      block-size: 17.6rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(../images/history-shape.svg);
+      top: -7.2rem;
+      right: -4.8rem;
+      z-index: 1;
+    }
+
+    img {
+      border-radius: .5rem;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__subtitle {
+    margin-block-end: 0.3rem;
+  }
+
+  &__title {
+    margin-block-end: 4.1rem;
+  }
+
+  &__form {
+    padding-block-start: 0.8rem;
+
+    label,
+    input,
+    select {
+      inline-size: 100%;
+      display: inline-block;
+    }
+
+    label {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-block-end: 1rem;
+    }
+
+    input::placeholder {
+      color: rgba($colorBgDark, .4);
+    }
+
+    input,
+    select {
+      margin-block-end: 2rem;
+      padding: 0.8rem 4rem 0.8rem 1.6rem;
+      font-size: 2rem;
+      font-weight: 300;
+      border: 1px solid rgba($colorBgDark, .2);
+      border-radius: .5rem;
+      cursor: pointer;
+      appearance: none;
+      position: relative;
+    }
+    select {
+      &:invalid {
+        color: rgba($colorBgDark, .4);
+      }
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: .6rem solid transparent;
+    border-top-color: $colorBgDark;
+    inline-size: .6rem;
+    block-size: .6rem;
+    top: 30%;
+    right: 3%;
+    cursor: pointer;
+  }
+
+  &:last-of-type {
+    margin-block-end: 3.2rem;
+  }
+}
